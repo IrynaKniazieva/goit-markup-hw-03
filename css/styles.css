@@ -60,7 +60,8 @@ img {
     margin-right: auto;
 }
 
-.logo {
+.logo,
+.footer-logo {
     margin-right: 90px;
     padding-top: 24px;
     padding-bottom: 24px;
@@ -357,16 +358,20 @@ height: 101px;
     background-color: var(--bkg-dark-color);
 }
 
-/* .footer-container,
-.footer-container-address {
-    margin-bottom: 0;
-} */
-
-.footer .logo {
-    color: var(--white-color);
+.footer-container {
+    display: flex;
+    flex-direction: column;
 }
 
-.address-link {
+
+.footer-logo {
+    color: var(--white-color);
+    margin-top: 60px;
+    margin-bottom: 22px;
+    padding: 0;
+}
+
+.address-item {
     
     font-size: 14px;
     line-height: 1.71;
@@ -374,6 +379,7 @@ height: 101px;
 }
 
 .list-address {
+    margin-bottom: 60px;
     font-style: normal;
 }
 
@@ -385,6 +391,14 @@ height: 101px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
+}
+
+.footer-container .item {
+    margin-bottom: 9px;
+}
+
+.footer-container .item:last-child {
+    margin-bottom: 0;
 }
 
 /* Portfolio */

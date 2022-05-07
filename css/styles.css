@@ -24,7 +24,8 @@ img {
     display: block;
 }
 
-.list {
+.list,
+.list-projects {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -38,9 +39,10 @@ img {
     padding-left: 15px;
     padding-right: 15px;
 
+    margin-bottom: 94px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 94px;
+    
 
 }
 
@@ -153,7 +155,7 @@ img {
 .hero-title {
     margin-right: 220px;
     margin-left: 250px;
-    margin-bottom: 29px;
+    margin-bottom: 30px;
     padding-top: 200px;
 
     font-weight: 900;
@@ -167,28 +169,29 @@ img {
        
 }
 
-.hero .button {
+.hero-button {
     display: flex;
-    align-items: center;
+    border: none;
+    border-radius: 6px;
     
-
-    width: 200px;
-    height: 50px;
-
+    align-items: center;
+    padding: 10px 32px;
+    margin-right: 467px;
+    margin-left: 502px;
+    
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    
-    
+        
     color: var(--white-color);
     background-color: var(--accent-color);
     cursor: pointer;
 
 }
 
-.hero .button:hover,
-.hero .button:focus {
+.hero-button:hover,
+.hero-button:focus {
     background-color: #188CE8;
 }
 
@@ -239,13 +242,53 @@ height: 101px;
 }
 
 /* секция чем мы занимаемся */
+.container-about {
+    padding: 0;
+}
 
+.section-title {
+    margin-bottom: 50px;
+}
+
+.section .list-about {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section .item-about {
+    margin-right: 30px;
+  }
+
+  .section .item-about:last-child {
+    margin-right: 0;
+  }
 
 /* секция Наша команда */
 .section-team {
-    background-color: var(--bkg-btn-color);
+      background-color: var(--bkg-btn-color);
 }
-/* заголовок для h2 наша команда */
+
+.team-container {
+    padding: 0;
+}
+
+.section-title {
+    padding-top: 94px;
+    margin-bottom: 50px;
+}
+
+.section-team .list {
+    display: flex;
+    justify-content: space-between;
+}
+.section-team .item {
+    margin-right: 30px;
+}
+
+.section-team .item:last-child{
+    margin-right: 0;
+}
+
 .team-list .section-subtitle {  
     font-weight: 500;
     font-size: 16px;
@@ -262,6 +305,7 @@ height: 101px;
     line-height: 1.18;
     text-align: center;
 }
+
 
 
 /* абзацы */
@@ -307,59 +351,16 @@ height: 101px;
     color: var(--primary-text-color);
 }
 
-/*  */
-
-/* Button */
-
-.hero .button {
-    font-family: inherit;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.06em;
-    color: var(--white-color);
-    background-color: var(--accent-color);
-    cursor: pointer;
-
-}
-
-.hero .button:hover,
-.hero .button:focus {
-    background-color: #188CE8;
-}
-
-
-
-.button-list .button {
-    font-family: inherit;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    text-align: center;
-    letter-spacing: 0.03em;
-    background-color: var(--bkg-btn-color);
-    color: var(--title-text-color);
-    cursor: pointer;
-}
-
-.button-list .current {
-    background-color: var(--accent-color);
-    color: var(--white-color);
-}
-
-.button-list .button:hover,
-.button-list .button:focus {
-    background-color: var(--accent-color);
-    color: var(--white-color);
-
-}
+/* footer */
 
 .footer {
     background-color: var(--bkg-dark-color);
 }
+
+/* .footer-container,
+.footer-container-address {
+    margin-bottom: 0;
+} */
 
 .footer .logo {
     color: var(--white-color);
@@ -386,6 +387,54 @@ height: 101px;
     text-decoration: none;
 }
 
+/* Portfolio */
+
+.portfolio-section {
+    padding-top: 94px;
+    
+}
+
+.portfolio-section .list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.portfolio-section .item {
+    margin-right: 8px;
+}
+
+.portfolio-section .item:last-child {
+    margin-right: 0px;
+}
+
+.project-button {
+    padding: 6px 22px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    
+
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    background-color: var(--bkg-btn-color);
+    color: var(--title-text-color);
+}
+
+.project-button:hover,
+.project-button:focus {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+}
+
+.button-list .current {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+}
 
 .projects-container {
     display: flex;

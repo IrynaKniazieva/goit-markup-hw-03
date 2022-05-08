@@ -499,17 +499,14 @@ height: 101px;
 }
 
 .subtitle-container {
-    padding-left: 24px;
+    padding: 20px 24px;
     border: 1px solid #EEEEEE;
     
 }
 
 .list-projects .subtitle {
-    margin-top: 20px;
     margin-bottom: 4px;
 }
 
-.list-projects .desc {
-    margin-bottom: 20px;
-}
+
 
